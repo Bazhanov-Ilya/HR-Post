@@ -13,13 +13,49 @@
 </head>
 
 <body>
+    
 <header class="header">
-    <div class="header_conteiner _conteiner">
+    <div class="header_conteiner ">
         <a href="#" class="logo"> <img src="data/logo.png"></a>
     </div>
-</header>
+    <div class="info">
+        <div class="email">
+            <img src="data/mail.png">
+            <p>for-hrpost@yandex.ru</p>
+        </div>
+        
+        <div class="phone">
+            <img src="data/phone.png">
+        <p>+7 495 000-00-00</p>
+        </div>
+   </div>
+               
+            </div>
+            <div class="icons">
+                <a href="#"><img src="data/linkedin.png"></a>
+                <a href="https://vk.com/public212480302"><img src="data/vk.png"></a>
+            </div>
 
-    <div class="banner  _conteiner ">
+
+    <div class="menuToggle" onclick=" toggleMenu();"></div>
+    
+    <ul class="nav">
+        <div class="menuToggle active" onclick=" toggleMenu();"></div>
+        <li><a href="#banner" onclick=" toggleMenu();">Home</a></li>
+        <li><a href="#service" onclick=" toggleMenu();">Почему нам доверяют</a></li>
+        <li><a href="#team" onclick=" toggleMenu();">Наша команда</a></li>
+        <li><a href="#programs" onclick=" toggleMenu();">Программы обучения</a></li>
+        <li><a href="#testimonials" onclick=" toggleMenu();">О нас говорят</a></li>
+        <li><a href="#company" onclick=" toggleMenu();">Нам доверяют</a></li>
+        <li><a href="#contact" onclick=" toggleMenu();">Связаться с нами</a></li>
+        <li></li>
+        
+    </ul>
+</header>
+<div class="allblur">
+        
+</div>
+    <div id ="banner" class="banner  _conteiner ">
         <div class="content wow slideInRight">
             <div class="first_line">
                 <h2>HR-POST</h2>
@@ -33,7 +69,8 @@
         </div>
     </div>
 
-    <div class="service">
+    <div id = "service" class="service">
+        <div class="row"></div>
         <div class="content">
             <div class="box firstBx">
                 <div class="imgBx">
@@ -84,11 +121,13 @@
                 </div>
             </div>
         </div>
+    
     </div>
     
-    <section class="team_section">
-    <div class="team _conteiner">
+    <section id = "team" class="team_section">
         <div class="row"></div>
+    <div class="team _conteiner">
+        
         <div class="title white">
             <h2 class="titleText">Наша команда</h2>
             <p class="line">__</p>
@@ -137,7 +176,7 @@
     </div>
 </section>
 
-<section class="programs_section">
+<section id = "programs" class="programs_section">
     <div class="programs _conteiner">
         <div class="row"></div>
         <div class="title white">
@@ -243,7 +282,7 @@
 
    
 
-    <section class="company_section">
+    <section id = "company" class="company_section">
         <div class="company _conteiner">
             <div class="row"></div>
             <div class="title white">
@@ -252,7 +291,7 @@
             <div class="content">
                 <div class="box">
                     <div class="imgBx">
-                        <img src="data/agroros-logo.gif">
+                        <img src="data/agroros-logo.jpg">
                     </div>
                 </div>
                 <div class="box">
@@ -262,19 +301,15 @@
                 </div>
                 <div class="box">
                     <div class="imgBx">
-                        <img src="data/agroros-logo.gif">
+                        <img src="data/UMC.png">
                     </div>
                 </div>
                 <div class="box">
                     <div class="imgBx">
-                        <img src="data/agroros-logo.gif">
+                        <img src="data/samson.jpg">
                     </div>
                 </div>
-                <div class="box">
-                    <div class="imgBx">
-                        <img src="data/agroros-logo.gif">
-                    </div>
-                </div>
+            
     
                
             </div>
@@ -282,15 +317,16 @@
     </section>
 
 
-    <section class="contact_section">
+    <section id = "contact" class="contact_section">
         <div class="contact _conteiner">
         <div class="row"></div>
         <div class="title">
             <h3 class="titleText">ЗАРЕГИСТРИРУЙСЯ СЕЙЧАС</h3>
             <p class="contactText">Пожалуйста, укажите ваши контактные данные:</p>
         </div>
-        <form action="php/form.php" method="post">
+       
         <div class="contactForm">
+            <form action="php/form.php" method="post">
             <div class="inputBox">
                 <input name="Name" type="text" placeholder="Имя">
             </div>
@@ -309,8 +345,9 @@
             <div class="inputBox">
                 <input name="send" type="submit" value="Отправить">
             </div>
+        </form>
         </div>
-    </form>
+  
     </div>
     </section>
 
@@ -338,8 +375,8 @@
                 <h4>Соцсети</h4>
             </div>
             <div class="footericons">
-                <a href="#"><img src="data/linkdin.webp"></a>
-                <a href="https://vk.com/public212480302"><img src="data/vk.webp"></a>
+                <a href="#"><img src="data/linkedin.png"></a>
+                <a href="https://vk.com/public212480302"><img src="data/vk.png"></a>
             </div>
         </div>
         </div>
